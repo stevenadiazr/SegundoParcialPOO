@@ -7,6 +7,8 @@ package segundoparcial;
 
 
 import java.util.Scanner;
+import segundoparcial.Factorys.FactoryTropas;
+import segundoparcial.Factorys.FactoryVehiculos;
 /**
  *
  * @author Docente
@@ -36,15 +38,23 @@ public class SegundoParcialPOO {
         
         FactoryTropas hacerTropas;
         hacerTropas = FactoryTropas.getInstance();
+        FactoryVehiculos hacerVehiculos;
+        hacerVehiculos = FactoryVehiculos.getInstance();
         
         while (opcion != 0){
             System.out.println("Que accion desea hacer?");
             System.out.println("Presione 1 para hacer un ejercito lyciano");
             System.out.println("Presione 2 para hacer un ejercito de biran");
             System.out.println("Presione 3 para hacer un ejercito elibe");
-            System.out.println("Presione 4 para hacer un ejercito lyciano");
-            System.out.println("Presione 5 para hacer un ejercito biran");
-            System.out.println("Presione 6 para hacer un ejercito de elibe");
+            System.out.println("Presione 4 para hacer un super soldado lyciano");
+            System.out.println("Presione 5 para hacer un super soldado biran");
+            System.out.println("Presione 6 para hacer un super soldado elibe");
+            System.out.println("Presione 7 para hacer un vehiculo lyciano");
+            System.out.println("Presione 8 para hacer un vehiculo de biran");
+            System.out.println("Presione 9 para hacer un vehiculo elibe");
+            System.out.println("Presione 10 para hacer un super vehiculo lyciano");
+            System.out.println("Presione 11 para hacer un super vehiculo biran");
+            System.out.println("Presione 12 para hacer un super vehiculo elibe");
             
             switch (opcion){
                 case 1:
@@ -64,6 +74,24 @@ public class SegundoParcialPOO {
                     break;
                 case 6:
                     hacerTropas.crearTropas("SuperSoldado", "Elibe");
+                    break;
+                case 7:
+                    hacerVehiculos.crearVehiculos("Normal", "Lycia");
+                    break;
+                case 8:
+                    hacerVehiculos.crearVehiculos("Normal", "Biran");
+                    break;
+                case 9:
+                    hacerVehiculos.crearVehiculos("Normal", "Elibe");
+                    break;
+                case 10:
+                    hacerVehiculos.crearVehiculos("Super", "Lycia");
+                    break;
+                case 11:
+                    hacerVehiculos.crearVehiculos("Super", "Biran");
+                    break;
+                case 12:
+                    hacerVehiculos.crearVehiculos("Super", "Elibe");
                     break;
                 default:
                     System.out.println("Seleccione una opcion valida por favor");

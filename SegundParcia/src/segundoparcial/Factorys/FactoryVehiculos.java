@@ -10,6 +10,12 @@ import segundoparcial.PatronBuilder.Vehiculo;
 import segundoparcial.PatronBuilder.MecanicoBiran;
 import segundoparcial.PatronBuilder.MecanicoElibe;
 import segundoparcial.PatronBuilder.MecanicoLyciano;
+import segundoparcial.PatronBuilder.SuperMecanico;
+import segundoparcial.PatronBuilder.SuperMecanicoBiran;
+import segundoparcial.PatronBuilder.SuperMecanicoElibe;
+import segundoparcial.PatronBuilder.SuperMecanicoLyciano;
+import segundoparcial.PatronBuilder.SuperTaller;
+import segundoparcial.PatronBuilder.SuperVehiculo;
 
 /**
  *
@@ -27,7 +33,7 @@ public class FactoryVehiculos {
     
     public void crearVehiculos(String tipo, String raza){
             switch (tipo){
-                case "Terrestre":
+                case "Normal":
                     switch (raza){
                         case "Lycia":
                             MecanicoLyciano ingenieroLyciano = new MecanicoLyciano();
@@ -56,31 +62,31 @@ public class FactoryVehiculos {
                     }
                 break;
                 
-                case "Aereo":
+                case "Super":
                     switch (raza){
                         case "Lycia":
-                            EntrenadorLycianoSuperSoldado superMaestroLyciano = new EntrenadorLycianoSuperSoldado();
-                            SuperCampamento superCampamentoLyciano = new SuperCampamento(superMaestroLyciano);
-                            superCampamentoLyciano.entrenarSuper();
-                            SuperSoldado superSoldadoLyciano = superCampamentoLyciano.getSuper();
+                            SuperMecanicoLyciano superIngenieroLyciano = new SuperMecanicoLyciano();
+                            SuperTaller superTallerLyciano = new SuperTaller(superIngenieroLyciano);
+                            superTallerLyciano.entrenarVehiculo();
+                            SuperVehiculo superVehiculoLyciano = superTallerLyciano.getVehiculo();
 
-                            System.out.println(superSoldadoLyciano.toString());
+                            System.out.println(superVehiculoLyciano.toString());
                             break;
                         case "Biran":
-                            EntrenadorBiranSuperSoldado superMaestroBiran = new EntrenadorBiranSuperSoldado();
-                            SuperCampamento superCampamentoBiran = new SuperCampamento(superMaestroBiran);
-                            superCampamentoBiran.entrenarSuper();
-                            SuperSoldado superSoldadoBiran = superCampamentoBiran.getSuper();
+                            SuperMecanicoBiran superIngenieroBiran = new SuperMecanicoBiran();
+                            SuperTaller superTallerBiran = new SuperTaller(superIngenieroBiran);
+                            superTallerBiran.entrenarVehiculo();
+                            SuperVehiculo superVehiculoBiran = superTallerBiran.getVehiculo();
 
-                            System.out.println(superSoldadoBiran.toString());
+                            System.out.println(superVehiculoBiran.toString());
                             break;
                         case "Elibe":
-                            EntrenadorElibeSuperSoldado superMaestroElibe = new EntrenadorElibeSuperSoldado();
-                            SuperCampamento superCampamentoElibe = new SuperCampamento(superMaestroElibe);
-                            superCampamentoElibe.entrenarSuper();
-                            SuperSoldado superSoldadoElibe = superCampamentoElibe.getSuper();
+                            SuperMecanicoElibe superIngenieroElibe = new SuperMecanicoElibe();
+                            SuperTaller superTallerElibe = new SuperTaller(superIngenieroElibe);
+                            superTallerElibe.entrenarVehiculo();
+                            SuperVehiculo superVehiculoElibe = superTallerElibe.getVehiculo();
 
-                            System.out.println(superSoldadoElibe.toString());
+                            System.out.println(superVehiculoElibe.toString());
                             break;
                     }
                 break;

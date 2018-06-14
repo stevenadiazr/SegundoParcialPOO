@@ -33,7 +33,7 @@ public class MecanicoElibe implements segundoparcial.PatronBuilder.Mecanico{
 
     @Override
     public void asignarNombre() {
-        vehiculo.setNombre("Ejercito Elibe");
+        vehiculo.setNombre("Vehiculo Elibe");
     }
 
     @Override

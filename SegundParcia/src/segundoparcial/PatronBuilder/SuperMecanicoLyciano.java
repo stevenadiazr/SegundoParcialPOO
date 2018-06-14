@@ -9,35 +9,35 @@ package segundoparcial.PatronBuilder;
  *
  * @author Docente
  */
-public class MecanicoLyciano implements segundoparcial.PatronBuilder.Mecanico{
-    private Vehiculo vehiculo;
+public class SuperMecanicoLyciano implements segundoparcial.PatronBuilder.SuperMecanico{
+    private SuperVehiculo SuperVehiculo;
 
-    public MecanicoLyciano(){
-        this.vehiculo = new Vehiculo();
+    public SuperMecanicoLyciano(){
+        this.SuperVehiculo = new SuperVehiculo();
     }
     
     @Override
     public void asignarVida() {
-        vehiculo.setVida(200);
+        SuperVehiculo.setVida(200);
     }
 
     @Override
     public void asignarDañoEdificios() {
-        vehiculo.setDañoEdificios(100);
+        SuperVehiculo.setDañoEdificios(100);
     }
 
     @Override
     public void asignarDañoEjercito() {
-        vehiculo.setDañoEjercito(75);
+        SuperVehiculo.setDañoEjercito(75);
     }
 
     @Override
     public void asignarNombre() {
-        vehiculo.setNombre("Vehiculo Lyciano");
+        SuperVehiculo.setNombre("Super vehiculo Lyciano");
     }
 
     @Override
-    public Vehiculo getVehiculo() {
-        return this.vehiculo;
+    public SuperVehiculo getVehiculo() {
+        return this.SuperVehiculo;
     }
 }

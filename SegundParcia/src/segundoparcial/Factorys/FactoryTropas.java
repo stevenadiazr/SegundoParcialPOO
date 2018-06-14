@@ -5,16 +5,16 @@
  */
 package segundoparcial.Factorys;
 
-import segundoparcial.PatronBuilder.Campamento;
-import segundoparcial.PatronBuilder.Ejercito;
-import segundoparcial.PatronBuilder.EntrenadorBiran;
-import segundoparcial.PatronBuilder.EntrenadorBiranSuperSoldado;
-import segundoparcial.PatronBuilder.EntrenadorElibe;
-import segundoparcial.PatronBuilder.EntrenadorElibeSuperSoldado;
-import segundoparcial.PatronBuilder.EntrenadorLyciano;
-import segundoparcial.PatronBuilder.EntrenadorLycianoSuperSoldado;
-import segundoparcial.PatronBuilder.SuperCampamento;
-import segundoparcial.PatronBuilder.SuperSoldado;
+import segundoparcial.PatronBuilderClases.Campamento;
+import segundoparcial.PatronBuilderClases.Ejercito;
+import segundoparcial.PatronBuilderClases.EntrenadorBiran;
+import segundoparcial.PatronBuilderClases.EntrenadorBiranSuperSoldado;
+import segundoparcial.PatronBuilderClases.EntrenadorElibe;
+import segundoparcial.PatronBuilderClases.EntrenadorElibeSuperSoldado;
+import segundoparcial.PatronBuilderClases.EntrenadorLyciano;
+import segundoparcial.PatronBuilderClases.EntrenadorLycianoSuperSoldado;
+import segundoparcial.PatronBuilderClases.SuperCampamento;
+import segundoparcial.PatronBuilderClases.SuperSoldado;
 
 /**
  *

@@ -5,17 +5,16 @@
  */
 package segundoparcial.Factorys;
 
-import segundoparcial.PatronBuilder.Taller;
-import segundoparcial.PatronBuilder.Vehiculo;
-import segundoparcial.PatronBuilder.MecanicoBiran;
-import segundoparcial.PatronBuilder.MecanicoElibe;
-import segundoparcial.PatronBuilder.MecanicoLyciano;
-import segundoparcial.PatronBuilder.SuperMecanico;
-import segundoparcial.PatronBuilder.SuperMecanicoBiran;
-import segundoparcial.PatronBuilder.SuperMecanicoElibe;
-import segundoparcial.PatronBuilder.SuperMecanicoLyciano;
-import segundoparcial.PatronBuilder.SuperTaller;
-import segundoparcial.PatronBuilder.SuperVehiculo;
+import segundoparcial.PatronBuilderClases.Taller;
+import segundoparcial.PatronBuilderClases.Vehiculo;
+import segundoparcial.PatronBuilderClases.MecanicoBiran;
+import segundoparcial.PatronBuilderClases.MecanicoElibe;
+import segundoparcial.PatronBuilderClases.MecanicoLyciano;
+import segundoparcial.PatronBuilderClases.SuperMecanicoBiran;
+import segundoparcial.PatronBuilderClases.SuperMecanicoElibe;
+import segundoparcial.PatronBuilderClases.SuperMecanicoLyciano;
+import segundoparcial.PatronBuilderClases.SuperTaller;
+import segundoparcial.PatronBuilderClases.SuperVehiculo;
 
 /**
  *
